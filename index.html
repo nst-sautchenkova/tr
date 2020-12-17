@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Dpro</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <meta name="format-detection" content="telephone=no">
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/swiper.min.js"></script>
+
+	<script src="js/aos.js"></script>  
+    <link rel="stylesheet" type="text/css" href="css/aos.css" /> 
+</head>
+	<body>
+       <div id="preloader" class="preloader">
+            <a href="#" class="logo-site"><img src="images/logo.svg" alt=""/></a>  
+            <div class="loader">
+                <div class="loader__bar"></div>
+            </div>
+        </div><!--/preloader-->
+        
+        <div class="page">
+            <header class="header page__header">
+                <div class="container">
+                    <div class="language header__language fadeElTop start-anim">
+                        <a href="#" class="language__item active">Ru</a>
+                        <a href="#" class="language__item">Ua</a>
+                        <a href="#" class="language__item">En</a>
+                    </div>
+                    
+                    <nav class="nav header__nav">
+                    	<div class="trigger-menu">
+                            <div class="hamburger-menu">
+                                <div class="hamburger-menu__bar"></div>
+                                <div class="hamburger-menu__bar"></div>
+                                <div class="hamburger-menu__bar"></div>
+                            </div>
+                        </div>
+                        <ul class="menu header__menu">
+                        	<li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+                            <li class="menu__item"><a href="#services" class="menu__link">Services</a></li>
+                            <li class="menu__item"><a href="#advantages" class="menu__link">Advantages</a></li>
+                            <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <script>
+					//anchor
+$(document).ready(function(){
+    $(".menu__link").on("click", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+					</script>
+                    
+                    <div class="logo header__logo">
+                    	<a href="#"><img src="images/logo_white.svg" alt=""/></a>
+                    </div>
+                    
+                    <div class="header__text">
+                    	<h1><span class="text_color_green">Effective marketing</span> in the sports sector</h1>
+                        <p>A sporty approach to brand awareness</p>
+                    </div>
+                </div><!-- .container -->
+            </header>
+            
+            <main class="main page__main">
+            	<section id="about" class="main__section line-bg_top line-bg_bottom">
+                	<div class="container">
+                    	<div class="section__title section__title_square" data-aos="fade-up">
+                        	<h2>Who we are</h2>
+                            <p>A little about us</p>
+                        </div>
+                        
+                        <div class="about__row row" data-aos="fade-up">
+                        	<div class="about__item">
+                                <p>DPro was started with a single mission in mind - to disrupt an archaic sports marketing landscape, with the objective of not only helping our partners to effectively engage sports fans, but to generate measured, incremental revenues from our marketing activity.</p>
+                                <p>We take incredible pride in being a performance-driven business and our track record of generating commercial marketing success for world-leading brands, challenger organisations and startups is unrivalled by any agency.</p>
+                            </div>
+                            <div class="about__item">
+                                <p>DPro proudly partners with a wide array of organisations, acting as an extension of their marketing operation. We operate a modernised, performance-based commercial model that enables companies to benefit from a world-class agency, without the traditional fixed costs.</p>
+                                <p>With an award-winning service that blends specialisms in Intelligence, Strategy, Creative and Media, DPro is the solution for brands looking to achieve high-growth performance in the digital age.</p>
+                            </div>
+                        </div>
+                    </div><!-- .container -->
+                </section>
+                
+                <section id="services" class="main__section">
+                	<div class="container">
+                    	<div class="section__title section__title_line" data-aos="fade-up">
+                        	<h2>What we do</h2>
+                            <p>Our SMG is Ukraine‘s first independent sport marketing agency. We provide our<br/>clients with integrated strategic, creative, media and production services.</p>
+                        </div>
+                        <div class="services__slider">
+                            <div class="services__row row swiper-wrapper">
+                                <div class="services__item swiper-slide" data-aos="fade-up">
+                                    <div class="ico"><img src="images/social-media.svg" alt=""/></div>
+                                    <h3 class="tit">Sponsorship & Media Relations</h3>
+                                    <p>Building the image and reputation of the business and its products, particularly amongst customers. Effectively communication  with customers and other stakeholders.</p>
+                                </div>
+                               <div class="services__item swiper-slide" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="ico"><img src="images/neural.svg" alt=""/></div>
+                                    <h3 class="tit">Communication & PR Strategies</h3>
+                                    <p>Public relations is a strategic communication process that builds mutually beneficial relationships between organizations and their public</p>
+                                </div>
+                                <div class="services__item swiper-slide" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="ico"><img src="images/business.svg" alt=""/></div>
+                                    <h3 class="tit">Creative Concept & Production</h3>
+                                    <p>Generating innovative and interesting ideas is a significant stage in producing new and effective content for your brand</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .container -->
+                </section>
+                
+                <section id="advantages" class="main__section line-bg_top line-bg_bottom">
+                	<div class="container">
+                    	<div class="section__title section__title_square" data-aos="fade-up">
+                        	<h2>Our <br/>advantages</h2>
+                            <p>benefit everyone</p>
+                        </div>
+                        <div class="advantages__slider">
+                            <div class="advantages__row row swiper-wrapper">
+                                <div class="advantages__item swiper-slide" data-aos="fade-up">
+                                    <div class="ico"><img src="images/athlete.svg" alt=""/></div>
+                                    <h3 class="tit">For athletes</h3>
+                                    <p>We increase loyalty to a specific sports club or athlete. We create the face of the brand, which makes it more accessible to people who are not involved in sports.</p>
+                                </div>
+                                <div class="advantages__item swiper-slide" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="ico"><img src="images/business-man.svg" alt=""/></div>
+                                    <h3 class="tit">For sponsors</h3>
+                                    <p>By entering into deals with sports associations, sponsors can promote and identify with major events, which ultimately benefits them.</p>
+                                </div>
+                                <div class="advantages__item swiper-slide" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="ico"><img src="images/funs.svg" alt=""/></div>
+                                    <h3 class="tit">For viewers</h3>
+                                    <p>Sports marketing gives fans the opportunity to interact with their athletic idols through promotional activities.</p>
+                                </div>
+                                <div class="advantages__item swiper-slide" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="ico"><img src="images/cake.svg" alt=""/></div>
+                                    <h3 class="tit">For the venue</h3>
+                                    <p>Fans of a sport, a specific team or athlete often travel to a sporting event venue to see the event in person. If the event is promoted, it generates income from the tourism industry.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .container -->
+                </section>
+            </main>
+    
+            <footer id="contact" class="footer page__footer">
+                <div class="container">
+                	<div class="section__title section__title_line">
+                        <h2>Contact us</h2>
+                        <p>For information on our range of creative, strategic, digital sports marketing<br/> activation services, please contact us.</p>
+                    </div>
+                    <div class="contact__row row">
+                        <div class="contacts contact__item flex">
+                            <div class="img"><img src="images/contact.svg" alt=""/></div>
+                            <div class="info">
+                                <p class="address">Kyiv. Ukraine</p>
+                                <a href="mailto:info@podium-smg.com">info@podium-smg.com </a>
+                                <a href="tel:380674130916">38 067 413 09 16</a>
+                            </div>
+                        </div>
+                        <div class="social-networks contact__item">
+                            <ul>
+                            	<li><a href="#"><i class="ico"><img src="images/facebook.svg" alt=""/></i>Facebook</a></li>
+                                <li><a href="#"><i class="ico"><img src="images/instagram.svg" alt=""/></i>Instagram</a></li>
+                                <li><a href="#"><i class="ico"><img src="images/linkedIn.svg" alt=""/></i>LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- .container -->
+            </footer>
+            
+        </div><!-- End .page -->
+        
+	   <script src="js/main.js"></script>
+	</body>
+</html>
